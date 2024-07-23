@@ -77,7 +77,7 @@ export default function Liquidity() {
   return (
     <LiquidityUIContextProvider>
       <LiquidityEffect />
-      <PageLayout mobileBarTitle="Liquidity" metaTitle="Liquidity - Raydium">
+      <PageLayout mobileBarTitle="Liquidity" metaTitle="Liquidity - Bonkadex">
         <LiquidityPageHead />
         <LiquidityCard />
         <UserLiquidityExhibition />
@@ -201,7 +201,7 @@ function ConfirmRiskPanel({
     <div className={twMerge('bg-[#141041] rounded-xl py-3 px-6 mobile:px-4', className)}>
       <div className="text-sm">
         I have read{' '}
-        <Link href="https://raydium.gitbook.io/raydium/exchange-trade-and-swap/liquidity-pools">
+        <Link href="">
           Bonkadex'sLiquidity Guide
         </Link>{' '}
         and understand the risks involved with providing liquidity and impermanent loss.
@@ -313,7 +313,7 @@ function LiquidityCard() {
   return (
     <CyberpunkStyleCard
       domRef={cardRef}
-      wrapperClassName="w-[min(456px,100%)] self-center cyberpunk-bg-light"
+      wrapperClassName="w-[min(456px,100%)] self-center "
       className="py-8 pt-4 px-6 mobile:py-5 mobile:px-3"
     >
       {/* input twin */}
@@ -1126,14 +1126,7 @@ function CreatePoolCardEntry() {
         <Row className="gap-4">
           <div className="text-xs mobile:text-2xs font-medium text-[rgba(171,196,255,0.5)]">
             Create a liquidity pool on Bonkadex that can be traded on the swap interface.{' '}
-            <Link
-              noTextStyle
-              className="text-[rgba(171,196,255)] hover:underline"
-              href="https://raydium.gitbook.io/raydium/permissionless/creating-a-pool"
-            >
-              Read the guide
-            </Link>{' '}
-            before attempting.
+            
           </div>
 
           <Button

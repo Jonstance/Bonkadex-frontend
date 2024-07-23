@@ -480,8 +480,6 @@ function Navbar({
       </Link>
 
       <Row className="gap-6 items-center mobile:hidden">
-        <MessageBoardWidget />
-        <TxVersionWidget />
         <WalletWidget />
       </Row>
     </Row>
@@ -717,7 +715,7 @@ function LinkItem({
       }`}
     >
       <Row className="items-center">
-        <div className="grid bg-gradient-to-br  rounded-md p-1.5 mr-3">
+        <div className="grid   rounded-md p-1.5 mr-3">
           <Icon size={isMobile ? 'xs' : 'sm'} iconSrc={icon}/>
         </div>
         <Row

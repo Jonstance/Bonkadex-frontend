@@ -47,13 +47,13 @@ export default function Tabs<T extends string = string>({
     <RadioGroup
       {...restProps}
       currentValue={restProps.currentValue}
-      className={twMerge('rounded-full p-1', $transparentBg ? 'bg-transparent' : 'bg-cyberpunk-card-bg', className)}
+      className={twMerge('rounded-md p-1', $transparentBg ? 'bg-transparent' : 'bg-cyberpunk-card-bg', className)}
       itemClassName={(checked) =>
         twMerge(
           size === 'sm'
             ? 'min-w-[82px] mobile:min-w-[64px] px-2 mobile:px-1.5 h-7 mobile:h-5 text-sm mobile:text-xs'
             : 'min-w-[96px] mobile:min-w-[76px] px-3 mobile:px-2 h-9 mobile:h-7 text-sm mobile:text-xs ',
-          `grid rounded-full place-items-center font-medium whitespace-nowrap ${
+          `grid rounded-md place-items-center font-medium whitespace-nowrap ${
             checked ? 'text-white' : 'text-[#ABC4FF]'
           }`,
           shrinkToValue(restProps.itemClassName, [checked])
@@ -62,7 +62,6 @@ export default function Tabs<T extends string = string>({
       itemStyle={(checked) =>
         checked
           ? {
-              background: 'linear-gradient(245.22deg, rgb(218, 46, 239), rgb(43, 106, 255), rgb(57, 208, 216))',
               backgroundSize: `${totalLength}00% 100%`,
               backgroundPosition: toPercentString((1 / (totalLength - 1)) * currentValueIndex)
             }

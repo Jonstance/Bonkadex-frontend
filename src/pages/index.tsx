@@ -220,7 +220,7 @@ function HomePageSection2() {
             </div>
             <div className="font-semibold text-lg text-white mb-2">Order Book AMM</div>
             <div className="font-light text-[#c4d6ff] mb-5">
-              Raydium{"'"}s AMM interacts with OpenBook{"'"}s central limit order book, meaning that pools have access
+              Bonkadex{"'"}s AMM interacts with OpenBook{"'"}s central limit order book, meaning that pools have access
               to all order flow and liquidity on OpenBook, and vice versa.
             </div>
           </Card>

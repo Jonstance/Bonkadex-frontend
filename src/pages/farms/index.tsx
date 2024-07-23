@@ -92,7 +92,7 @@ export default function FarmsPage() {
     <PageLayout
       mobileBarTitle={{
         items: [
-          { value: 'Raydium', barLabel: 'Raydium Farm' },
+          { value: 'Raydium', barLabel: 'Bonkadex Farm' },
           { value: 'Fusion', barLabel: 'Fusion Farm' },
           { value: 'Ecosystem', barLabel: 'Ecosystem Farm' },
           { value: 'Staked', barLabel: 'Staked Farm' }
@@ -533,7 +533,7 @@ function FarmCard() {
       ? { title: 'Fusion Farms', description: 'Stake LP tokens and earn project token rewards' }
       : currentTab === 'Staked'
       ? { title: 'Your Staked Farms', description: 'You are currently staked in these farms' }
-      : { title: 'Raydium Farms', description: 'Stake LP tokens and earn token rewards' }
+      : { title: 'Bonkadex Farms', description: 'Stake LP tokens and earn token rewards' }
 
   // NOTE: filter widgets
   const innerFarmDatabaseWidgets = isMobile ? (

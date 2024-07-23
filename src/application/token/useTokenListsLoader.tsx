@@ -462,7 +462,7 @@ async function loadTokens(inputTokenListConfigs: TokenListFetchConfigItem[], can
 
   const blacklistSet = new Set(blacklist)
   const unsortedTokenInfos = Object.values(allTokens)
-    /* shake off tokens in raydium blacklist */
+    /* shake off tokens in Bonkadex blacklist */
     .filter((info) => !blacklistSet.has(info.mint))
 
   const splTokenJsonInfos = listToMap(

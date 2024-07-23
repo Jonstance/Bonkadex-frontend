@@ -202,7 +202,7 @@ function ConfirmRiskPanel({
       <div className="text-sm">
         I have read{' '}
         <Link href="https://raydium.gitbook.io/raydium/exchange-trade-and-swap/liquidity-pools">
-          Raydium's Liquidity Guide
+          Bonkadex'sLiquidity Guide
         </Link>{' '}
         and understand the risks involved with providing liquidity and impermanent loss.
       </div>
@@ -1125,7 +1125,7 @@ function CreatePoolCardEntry() {
       <Card className="p-6 mt-6 mobile:py-5 mobile:px-3 bg-cyberpunk-card-bg" size="lg">
         <Row className="gap-4">
           <div className="text-xs mobile:text-2xs font-medium text-[rgba(171,196,255,0.5)]">
-            Create a liquidity pool on Raydium that can be traded on the swap interface.{' '}
+            Create a liquidity pool on Bonkadex that can be traded on the swap interface.{' '}
             <Link
               noTextStyle
               className="text-[rgba(171,196,255)] hover:underline"

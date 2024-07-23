@@ -114,9 +114,9 @@ export default function CreateFarmReviewPage() {
 
         <div className="font-medium text-sm mobile:text-xs text-justify leading-snug text-[#abc4ff80] mb-8">
           <span className="text-[#DA2EEF]">Please note:</span> Rewards allocated to farms cannot be withdrawn after
-          farming starts. Newly created farms generally appear on Raydium 10-30 minutes after creation, depending on
+          farming starts. Newly created farms generally appear on Bonkadex 10-30 minutes after creation, depending on
           Solana network status. A one-time fee of 300 RAY is required to create a farm, which will be deposited into
-          the Raydium treasury.
+          the Bonkadex treasury.
         </div>
 
         {created ? (

@@ -1,4 +1,4 @@
-# Raydium Frontend
+# Bonkadex Frontend
 
 # url(query) support
 

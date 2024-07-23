@@ -51,7 +51,7 @@ function WarningBoard({ className }: { className: string }) {
         <Card
           className={`p-6 mobile:p-4 grow rounded-3xl mobile:rounded-2xl ring-1 ring-inset ring-[#39d0d8] bg-[#1B1659]`}
         >
-          <div className="mobile:text-sm font-medium text-base text-white mb-3">Raydium now supports Token 2022!</div>
+          <div className="mobile:text-sm font-medium text-base text-white mb-3">Bonkadex now supports Token 2022!</div>
           <div className="font-medium text-sm mobile:text-xs text-[#ABC4FF80] mb-4">
             You can now create a CLMM pool and farm for assets using the Token 22 program. To learn more about the
             supported Token 22 extensions please read this{' '}

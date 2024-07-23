@@ -99,7 +99,7 @@ function TokenSelectorDialogContent({
     closePanel?.()
   })
   const selectToken = useEvent(async (splToken: SplToken) => {
-    const isOfficialToken = tokenListSettings['Raydium Token List'].mints?.has(splToken.mintString)
+    const isOfficialToken = tokenListSettings['Bonkadex Token List'].mints?.has(splToken.mintString)
     // tokenListSettings['Solana Token List'][splToken.mintString]
     const canSelect =
       turnOnTokenVerification && !isOfficialToken

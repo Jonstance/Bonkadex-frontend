@@ -164,7 +164,7 @@ function InputCard({ info }: { info: HydratedCompensationInfoItem }) {
                       />
                       <Tooltip.Panel>
                         <p className="w-60">
-                          This position was opened on the third-party protocol listed here, and not on Raydium directly.
+                          This position was opened on the third-party protocol listed here, and not on Bonkadex directly.
                           Individual position data was provided by the protocol.
                         </p>
                       </Tooltip.Panel>

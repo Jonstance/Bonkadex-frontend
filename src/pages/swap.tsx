@@ -100,7 +100,7 @@ export default function Swap() {
   )
 }
 
-// to check if downCoin is unOfficial (not is raydium token list but in solana token list)
+// to check if downCoin is unOfficial (not is Bonkadex token list but in solana token list)
 function useUnofficialTokenConfirmState(): { hasConfirmed: boolean; popConfirm: () => void } {
   const directionReversed = useSwap((s) => s.directionReversed)
   const coin1 = useSwap((s) => s.coin1)
@@ -897,7 +897,7 @@ function SwapCardInfo({
   const swapThrough =
     upCoin && downCoin ? (
       currentCalcResult?.routeType === 'amm' ? (
-        'Raydium Pool'
+        'Bonkadex Pool'
       ) : currentCalcResult?.routeType === 'route' ? (
         <SwappingThrough
           startSymbol={upCoin?.symbol ?? ''}

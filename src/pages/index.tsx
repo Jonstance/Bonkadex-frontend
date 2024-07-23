@@ -19,7 +19,7 @@ import { useDocumentScrollActionDetector } from '@/hooks/useScrollActionDetector
 
 function HomePageContainer({ children }: { children?: ReactNode }) {
   useDocumentScrollActionDetector()
-  useDocumentMetaTitle('BonkaDex')
+  useDocumentMetaTitle('Bonkadex ')
   return (
     <div
       className="flow-root overflow-x-hidden"
@@ -204,7 +204,7 @@ function HomePageSection2() {
             className="w-10 h-px my-2 mx-auto rounded-full"
             style={{ background: 'radial-gradient(39.84% 47.5% at 96.82% 58.33%, #39d0d8 0%, #2b6aff 100%)' }}
           />
-          <div className="text-lg">Raydium provides Ecosystem-Wide Liquidity for users and projects</div>
+          <div className="text-lg">Bonkadex provides Ecosystem-Wide Liquidity for users and projects</div>
         </div>
 
         <Grid className="gap-6 grid-cols-3 tablet:grid-cols-1 mobile:grid-cols-1 justify-items-center">
@@ -237,7 +237,7 @@ function HomePageSection2() {
             </div>
             <div className="font-semibold text-lg text-white mb-2">Best Price Swaps</div>
             <div className="font-light text-[#c4d6ff] mb-5">
-              Raydium determines the best swap route among all pools in order to provide the best price for users, and
+              Bonkadex determines the best swap route among all pools in order to provide the best price for users, and
               executes accordingly.
             </div>
           </Card>
@@ -254,7 +254,7 @@ function HomePageSection2() {
             </div>
             <div className="font-semibold text-lg text-white mb-2">Premissionless Liquidity</div>
             <div className="font-light text-[#c4d6ff] mb-5">
-              Raydium enables the permissionless creation of liquidity pools and farms so projects can launch and
+              Bonkadex enables the permissionless creation of liquidity pools and farms so projects can launch and
               bootstrap liquidity in a decentralized manner.
             </div>
           </Card>
@@ -463,7 +463,7 @@ function BetaBanner() {
     <div className={`flex flex-row ${isBetaInfoOpen ? 'flex' : 'hidden'} bg-ground-color-light`}>
       <div className="flex items-center justify-center text-center my-2" style={{ width: '95%' }}>
         <div className="text-primary text-sm font-normal">
-          <span>In case you missed it, Raydium V3 Beta is live - check it out </span>
+          <span>In case you missed it, Bonkadex V3 Beta is live - check it out </span>
           <a href="https://beta.raydium.io" rel="noreferrer" target="_blank" className="text-link-color">
             here
           </a>

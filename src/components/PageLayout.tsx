@@ -110,7 +110,6 @@ export default function PageLayout(props: {
       className={`w-full mobile:w-full h-full mobile:h-full`}
     >
       <div className="grid-area-d">
-        <BetaBanner className="w-full" />
         <RPCPerformanceBanner className="w-full" />
         <NewConcentratedPoolBanner className="w-full" />
         <NoneATABanner className="w-full" />
@@ -475,6 +474,8 @@ function Navbar({
         <Image
           className={`cursor-pointer ${inDev ? 'hue-rotate-60' : ''} mobile:hidden`}
           src="/logo/logo-with-text.svg"
+          width={70}
+          height={70}
         />
       </Link>
 
@@ -641,7 +642,7 @@ function SideMenu({ className, onClickCloseBtn }: { className?: string; onClickC
         {isMobile && (
           <Row className="items-center justify-between p-6 mobile:p-4 mobile:pl-8">
             <Link href="/">
-              <Image src="/logo/logo-with-text.svg" className={`mobile:scale-75 ${inDev ? 'hue-rotate-60' : ''}`} />
+              <Image src="/logo/logo-with-text.svg" width={70} height={70} className={`mobile:scale-75 ${inDev ? 'hue-rotate-60' : ''}`} />
             </Link>
             <Icon
               size={isMobile ? 'sm' : 'md'}

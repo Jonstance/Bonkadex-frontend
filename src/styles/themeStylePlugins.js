@@ -169,15 +169,14 @@ exports.glassStyle = plugin(({ addUtilities }) => {
         }
       },
     '.frosted-glass-teal': {
-      '--text-color': 'hsl(183, 67%, 54%)',
-      '--border-color': 'hsl(165, 87%, 65%)',
-      '--bg-board-color': 'hsl(183, 67%, 54%, 0.2)',
-      '--bg-board-color-2': 'hsl(183, 67%, 54%, 0)'
+      '--text-color': '#FFFFFF',
+      '--bg-board-color': '#a938e2',
+      '--bg-board-color-2': '#a938e2'
     },
     '.frosted-glass-teal.ghost': {
       '--text-color': 'hsl(183, 67%, 54%)',
       '--border-color': 'hsl(165, 87%, 65%, 0.5)',
-      '--bg-board-color': 'hsl(183, 67%, 54%, 0.05)',
+      '--bg-board-color': '#a938e2',
       '--bg-board-color-2': 'hsl(183, 67%, 54%, 0)'
     },
     '.frosted-glass-skygray': {

@@ -19,15 +19,13 @@ import { useDocumentScrollActionDetector } from '@/hooks/useScrollActionDetector
 
 function HomePageContainer({ children }: { children?: ReactNode }) {
   useDocumentScrollActionDetector()
-  useDocumentMetaTitle('Raydium')
+  useDocumentMetaTitle('BonkaDex')
   return (
     <div
       className="flow-root overflow-x-hidden"
       style={{
-        backgroundColor: '#141041',
-        backgroundImage: "url('/backgroundImages/home-page-bg-lights.webp')",
-        backgroundSize: '100% 95%',
-        backgroundRepeat: 'no-repeat'
+        backgroundColor: '#1b1a22',
+        backgroundImage: "url('/backgroundImages/home-bg-element-2.png')",
       }}
     >
       {children}
@@ -40,7 +38,7 @@ function HomePageNavbar() {
   const { push } = useRouter()
   return (
     <Row className="justify-between mobile:justify-center py-12 px-[min(160px,8vw)]">
-      <Image src="/logo/logo-with-text.svg" />
+      <Image src="/logo/logo-with-text.svg" width={60} height={60} />
       {!isMobile && (
         <Button
           className="frosted-glass-teal"
@@ -48,7 +46,7 @@ function HomePageNavbar() {
             push('/swap')
           }}
         >
-          Launch app
+          Trade Tokens
         </Button>
       )}
     </Row>
@@ -61,7 +59,6 @@ function HomePageSection0() {
   const { tvl, totalvolume } = useHomeInfo()
   return (
     <section className="grid-child-center grid-cover-container mb-16 relative">
-      <Image src="/backgroundImages/home-bg-element-1.png" className="w-[744px] mobile:w-[394px]" />
       <div className="grid-cover-content children-center">
         <div className="font-light text-[64px] mobile:text-[30px] text-white mb-4 mt-14 mobile:mt-9 leading-[60px] mobile:leading-[32px]">
           An avenue for <br />
@@ -83,67 +80,24 @@ function HomePageSection0() {
         {/* two button */}
         <Row className="gap-8 mobile:gap-4 mb-16 mobile:mb-6 grid grid-cols-2-fr">
           <Button
-            className="home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4"
+            className="frosted-glass-teal text-white mobile:text-xs px-5 mobile:px-4"
             onClick={() => {
               push('/swap')
             }}
           >
-            <Row className="items-center gap-2">
-              <div>Launch app</div>
-              <Icon heroIconName="chevron-right" size="xs" />
-            </Row>
+              <div>Trade</div>
           </Button>
 
           <Button
             className="frosted-glass-teal text-white mobile:text-xs px-5 mobile:px-4 forsted-blur"
             onClick={() => {
-              linkTo('https://raydium.gitbook.io/raydium/')
+              push('/swap')
             }}
           >
-            <Row className="items-center gap-2">
-              <div>Read docs</div>
-              <Icon iconSrc="/icons/gitbook.svg" size="sm" />
-            </Row>
+              <div>Buy BonkCoin</div>
           </Button>
         </Row>
-        {/* two panels */}
-        <Row className="gap-6 mobile:gap-3 mb-9 grid grid-cols-2-fr">
-          <Card className="frosted-glass-smoke forsted-blur-sm rounded-3xl mobile:rounded-2xl p-6 mobile:py-3 mobile:px-6 mobile:min-w-[156px] min-w-[250px] tablet:min-w-[250px]">
-            <div className="text-sm text-[#adc6ff] mb-1 mobile:text-[8px]">TOTAL VALUE LOCKED</div>
-            {/* value */}
-            <Row className="justify-center text-xl mobile:text-xs font-normal text-white tracking-widest mobile:tracking-wider">
-              <div className="mr-1">$</div>
-              {tvl && (
-                <NumberJelly
-                  fractionLength={0}
-                  eachLoopDuration={400}
-                  totalDuration={8 * 60 * 1000}
-                  maxDeltaPercent={0.05}
-                  currentValue={tvl}
-                  initValue={tvl ? 0.999 * tvl : undefined}
-                />
-              )}
-            </Row>
-          </Card>
-
-          <Card className="frosted-glass-smoke forsted-blur-sm rounded-3xl mobile:rounded-2xl p-6 mobile:py-3 mobile:px-6 mobile:min-w-[156px] min-w-[250px] tablet:min-w-[250px]">
-            <div className="text-sm text-[#adc6ff] mb-1 mobile:text-[8px]">TOTAL TRADING VOLUME</div>
-            {/* value */}
-            <Row className="justify-center text-xl mobile:text-xs font-normal text-white tracking-widest mobile:tracking-wider">
-              <div className="mr-1">$</div>
-              {totalvolume && (
-                <NumberJelly
-                  fractionLength={0}
-                  eachLoopDuration={200}
-                  totalDuration={8 * 60 * 1000}
-                  maxDeltaPercent={0.05}
-                  currentValue={totalvolume}
-                  initValue={totalvolume ? 0.999 * totalvolume : undefined}
-                />
-              )}
-            </Row>
-          </Card>
-        </Row>
+        
         <Image src="/logo/build-on-slogan.svg" className="transform mobile:scale-75" />
       </div>
     </section>
@@ -166,11 +120,7 @@ function HomePageSection1() {
       <div
         className="absolute inset-0 opacity-30"
         style={{
-          background: 'linear-gradient(245.22deg, #da2eef 7.97%, #2b6aff 49.17%, #39d0d8 92.1%)',
-          maskImage: "url('/backgroundImages/home-bg-element-2.png')",
-          WebkitMaskImage: "url('/backgroundImages/home-bg-element-2.png')",
-          maskSize: 'cover',
-          WebkitMaskSize: 'cover'
+          background: 'linear-gradient(245.22deg, #ac55e2 7.97%, #2b6aff 49.17%, #2977cc 92.1%)',
         }}
       />
       <div>
@@ -182,7 +132,7 @@ function HomePageSection1() {
           <div className="text-lg">A suite of features powering the evolution of DeFi on Solana</div>
         </div>
 
-        <Grid className="gap-5 grid-cols-4 tablet:grid-cols-2 mobile:grid-cols-1">
+        <Grid className="gap-5 grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
           <Card className="flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl">
             <div className="frosted-glass-teal p-3 mb-3 rounded-xl">
               <Icon iconSrc="/icons/home-trade.svg" />
@@ -231,21 +181,7 @@ function HomePageSection1() {
             </Button>
           </Card>
 
-          <Card className="flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl">
-            <div className="frosted-glass-teal p-3 mb-3 rounded-xl">
-              <Icon iconSrc="/icons/home-acceleraytor.svg" />
-            </div>
-            <div className="font-semibold text-lg text-white mb-2">AcceleRaytor</div>
-            <div className="font-light text-sm text-[#c4d6ff] mb-5">Launchpad for new Solana projects.</div>
-            <Button
-              className="frosted-glass-teal"
-              onClick={() => {
-                push('https://v1.raydium.io/acceleRaytor')
-              }}
-            >
-              View Projects
-            </Button>
-          </Card>
+          
         </Grid>
       </div>
     </section>
@@ -260,12 +196,7 @@ function HomePageSection2() {
     <section className="grid-child-center grid-cover-container">
       <div
         className="w-screen h-full"
-        style={{
-          background:
-            isMobile || isTablet
-              ? "url('/backgroundImages/home-bg-element-4.png') 0% 0% / 100% 100%"
-              : "url('/backgroundImages/home-bg-element-3.png') 0% 0% / 100% 100%"
-        }}
+       
       />
       <div className="max-w-[1220px] px-14 tablet:px-4 mt-28 mx-16 tablet:mx-4 mb-44">
         <div className="mb-8">
@@ -357,14 +288,9 @@ function HomePageFooter() {
   return (
     <footer
       className="pt-56 overflow-hidden"
-      style={{
-        background:
-          isTablet || isMobile
-            ? "url('/backgroundImages/home-footer-bg.webp') 0 0 / auto 100%"
-            : "url('/backgroundImages/home-footer-bg.webp') 0 0 / 100% 100%"
-      }}
+      
     >
-      <Grid className="mobile:gap-14 justify-around px-[10%] grid-cols-4 tablet:grid-cols-3 mobile:grid-cols-1 gap-16 gap-y-4">
+      <Grid className="mobile:gap-14 justify-around px-[10%] grid-cols-3 tablet:grid-cols-3 mobile:grid-cols-1 gap-16 gap-y-4">
         <div>
           <div className="mb-8">
             <div className="text-sm mb-3 tablet:text-center">ABOUT</div>
@@ -374,12 +300,7 @@ function HomePageFooter() {
             />
           </div>
           <Col className="gap-6">
-            <Link
-              className="text-[#c4d6ff] hover:text-white tablet:text-center"
-              href="https://raydium.gitbook.io/raydium/"
-            >
-              Documentation
-            </Link>
+            
             <Link
               className="text-[#c4d6ff] hover:text-white tablet:text-center"
               href="https://coinmarketcap.com/currencies/raydium/"
@@ -388,51 +309,15 @@ function HomePageFooter() {
             </Link>
             <Link
               className="text-[#c4d6ff] hover:text-white tablet:text-center"
-              href="https://www.coingecko.com/en/coins/raydium"
+              href=""
             >
               CoinGecko
             </Link>
-            <Link openInNewTab className="text-[#c4d6ff] hover:text-white tablet:text-center" href="/docs/disclaimer">
-              Disclaimer
-            </Link>
+           
           </Col>
         </div>
 
-        <div>
-          <div className="mb-8">
-            <div className="text-sm mb-3 tablet:text-center">PROTOCOL</div>
-            <div
-              className="w-6 h-px my-2 rounded-full tablet:mx-auto"
-              style={{ background: 'radial-gradient(39.84% 47.5% at 96.82% 58.33%, #39d0d8 0%, #2b6aff 100%)' }}
-            />
-          </div>
-          <Col className="gap-6">
-            <Link
-              className="text-[#c4d6ff] hover:text-white tablet:text-center"
-              href="https://forms.gle/Fjq4MiRA2qWbPyt29"
-            >
-              Apply for DropZone
-            </Link>
-            <Link
-              className="text-[#c4d6ff] hover:text-white tablet:text-center"
-              href="https://docs.google.com/forms/d/1Mk-x0OcI1tCZzL0Lj_WY8d02dMXsc-Z2AG3AaO6W_Rc/edit#responses"
-            >
-              Apply for Fusion Pool
-            </Link>
-            <Link
-              className="text-[#c4d6ff] hover:text-white tablet:text-center"
-              href="https://docs.google.com/forms/d/1Mk-x0OcI1tCZzL0Lj_WY8d02dMXsc-Z2AG3AaO6W_Rc/edit#responses"
-            >
-              Apply for AcceleRaytor
-            </Link>
-            <Link
-              className="text-[#c4d6ff] hover:text-white tablet:text-center"
-              href="https://raydium.gitbook.io/raydium/permissionless/creating-a-pool"
-            >
-              Permissionless Pool
-            </Link>
-          </Col>
-        </div>
+        
 
         <div>
           <div className="mb-8">
@@ -443,15 +328,10 @@ function HomePageFooter() {
             />
           </div>
           <Col className="gap-6">
+            
             <Link
               className="text-[#c4d6ff] hover:text-white tablet:text-center"
-              href="https://raydium.gitbook.io/raydium/trading-on-serum/spl-wallets"
-            >
-              Getting Started on Raydium
-            </Link>
-            <Link
-              className="text-[#c4d6ff] hover:text-white tablet:text-center"
-              href="https://raydium.gitbook.io/raydium/trading-on-serum/faq"
+              href=""
             >
               FAQ
             </Link>
@@ -572,7 +452,7 @@ function HomePageFooter() {
         </div>
       </Grid>
 
-      <Image className="mx-auto p-20 transform scale-125 pointer-events-none" src="/logo/logo-with-text.svg" />
+      <Image className="mx-auto p-20 transform scale-125 pointer-events-none" src="/logo/logo-with-text.svg" width={70} height={70}/>
     </footer>
   )
 }
@@ -613,7 +493,6 @@ function BetaBanner() {
 export default function HomePage() {
   return (
     <HomePageContainer>
-      <BetaBanner />
       <HomePageNavbar />
       <HomePageSection0 />
       <HomePageSection1 />

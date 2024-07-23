@@ -115,7 +115,7 @@ export default function Button({ validators, ...restProps }: ButtonProps) {
 
 /** base inner <Button> style  */
 function solidButtonTailwind({
-  size = 'default',
+  size = 'md',
   disable,
   haveFallbackClick
 }: { size?: 'xs' | 'md' | 'sm' | 'lg' | 'default'; disable?: boolean; haveFallbackClick?: boolean } = {}) {
@@ -138,7 +138,7 @@ function solidButtonTailwind({
 
 /** extra inner <Button> style */
 function outlineButtonTailwind({
-  size = 'default',
+  size = 'md',
   disable,
   haveFallbackClick
 }: { size?: 'xs' | 'md' | 'sm' | 'lg' | 'default'; disable?: boolean; haveFallbackClick?: boolean } = {}) {
@@ -157,7 +157,7 @@ function outlineButtonTailwind({
 
 /** extra inner <Button> style */
 function textButtonTailwind({
-  size = 'default',
+  size = 'md',
   disable,
   haveFallbackClick
 }: { size?: 'xs' | 'md' | 'sm' | 'lg' | 'default'; disable?: boolean; haveFallbackClick?: boolean } = {}) {

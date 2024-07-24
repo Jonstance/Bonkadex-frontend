@@ -303,13 +303,13 @@ function HomePageFooter() {
             
             <Link
               className="text-[#c4d6ff] hover:text-white tablet:text-center"
-              href="https://coinmarketcap.com/currencies/raydium/"
+              href="/"
             >
               CoinMarketCap
             </Link>
             <Link
               className="text-[#c4d6ff] hover:text-white tablet:text-center"
-              href=""
+              href="/"
             >
               CoinGecko
             </Link>
@@ -347,7 +347,7 @@ function HomePageFooter() {
             />
           </div>
           <Grid className="flex flex-col tablet:flex-row gap-6 tablet:gap-10">
-            <Link className="text-[#c4d6ff] hover:text-white" href="https://twitter.com/RaydiumProtocol">
+            <Link className="text-[#c4d6ff] hover:text-white" href="https://x.com/BonkaDex?t=z0-wKJZCAvb68ljCPFT_hw&s=09">
               <Row className="items-center gap-2">
                 <Icon
                   className="frosted-glass-teal p-1.5 rounded-lg text"
@@ -357,97 +357,27 @@ function HomePageFooter() {
                 <div className="tablet:hidden">Twitter</div>
               </Row>
             </Link>
-            <Link className="text-[#c4d6ff] hover:text-white" href="https://raydium.medium.com/">
+            <Link className="text-[#c4d6ff] hover:text-white" href="https://t.me/BonkaChannel">
               <Row className="items-center gap-2">
                 <Icon
                   className="frosted-glass-teal p-1.5 rounded-lg text"
                   iconClassName="w-5 h-5 tablet:w-6 tablet:h-6"
-                  iconSrc="icons/media-medium.svg"
+                  iconSrc="icons/media-telegram.svg"
                 />
-                <div className="tablet:hidden">Medium</div>
+                <div className="tablet:hidden">Telegram Channel</div>
               </Row>
             </Link>
-            <Link className="text-[#c4d6ff] hover:text-white" href="https://discord.gg/raydium">
+            <Link className="text-[#c4d6ff] hover:text-white" href="https://t.me/Bonkacoin">
               <Row className="items-center gap-2">
                 <Icon
                   className="frosted-glass-teal p-1.5 rounded-lg text"
                   iconClassName="w-5 h-5 tablet:w-6 tablet:h-6"
-                  iconSrc="icons/media-discord.svg"
+                  iconSrc="icons/media-telegram.svg"
                 />
-                <div className="tablet:hidden">Discord</div>
+                <div className="tablet:hidden">Telegram</div>
               </Row>
             </Link>
-            <Row className="items-center gap-2">
-              <Tooltip triggerBy="click" placement={isTablet || isMobile ? 'left' : 'right'}>
-                <Row className="text-[#c4d6ff] hover:text-white items-center gap-1 cursor-pointer">
-                  <Icon
-                    className="frosted-glass-teal p-1.5 rounded-lg text"
-                    iconClassName="w-5 h-5 tablet:w-6 tablet:h-6"
-                    iconSrc="/icons/media-telegram.svg"
-                  />
-                  <div className="tablet:hidden">Telegram</div>
-                  <Icon size="sm" heroIconName="chevron-down" />
-                </Row>
-                <Tooltip.Panel>
-                  <Col className="divide-y-1.5">
-                    <Link
-                      className="border-[rgba(196,214,255,0.1)] text-[#c4d6ff] hover:text-white p-2 whitespace-nowrap text-sm"
-                      href="https://t.me/raydiumprotocol"
-                    >
-                      Telegram (EN)
-                    </Link>
-                    <Link
-                      className="border-[rgba(196,214,255,0.1)] text-[#c4d6ff] hover:text-white p-2 whitespace-nowrap text-sm"
-                      href="https://t.me/RaydiumChina"
-                    >
-                      Telegram (CN)
-                    </Link>
-                    <Link
-                      className="border-[rgba(196,214,255,0.1)] text-[#c4d6ff] hover:text-white p-2 whitespace-nowrap text-sm"
-                      href="https://t.me/raydiumkorea"
-                    >
-                      Telegram (KR)
-                    </Link>
-                    <Link
-                      className="border-[rgba(196,214,255,0.1)] text-[#c4d6ff] hover:text-white p-2 whitespace-nowrap text-sm"
-                      href="https://t.me/raydiumjapan"
-                    >
-                      Telegram (JP)
-                    </Link>
-                    <Link
-                      className="border-[rgba(196,214,255,0.1)] text-[#c4d6ff] hover:text-white p-2 whitespace-nowrap text-sm"
-                      href="https://t.me/RaydiumSpanish"
-                    >
-                      Telegram (ES)
-                    </Link>
-                    <Link
-                      className="border-[rgba(196,214,255,0.1)] text-[#c4d6ff] hover:text-white p-2 whitespace-nowrap text-sm"
-                      href="https://t.me/RaydiumTurkey"
-                    >
-                      Telegram (TR)
-                    </Link>
-                    <Link
-                      className="border-[rgba(196,214,255,0.1)] text-[#c4d6ff] hover:text-white p-2 whitespace-nowrap text-sm"
-                      href="https://t.me/RaydiumVietnam"
-                    >
-                      Telegram (VN)
-                    </Link>
-                    <Link
-                      className="border-[rgba(196,214,255,0.1)] text-[#c4d6ff] hover:text-white p-2 whitespace-nowrap text-sm"
-                      href="https://t.me/RaydiumRussian"
-                    >
-                      Telegram (RU)
-                    </Link>
-                    <Link
-                      className="border-[rgba(196,214,255,0.1)] text-[#c4d6ff] hover:text-white p-2 whitespace-nowrap text-sm"
-                      href="https://t.me/raydiumthailand"
-                    >
-                      Telegram (TH)
-                    </Link>
-                  </Col>
-                </Tooltip.Panel>
-              </Tooltip>
-            </Row>
+            
           </Grid>
         </div>
       </Grid>

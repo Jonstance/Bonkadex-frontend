@@ -188,7 +188,7 @@ export default function EditFarm() {
           Before creating a farm, make sure to check the
           <Link
             className="ml-1"
-            href="https://docs.raydium.io/raydium/concentrated-liquidity/creating-a-clmm-pool-and-farm"
+            href=""
           >
             detailed guide
           </Link>

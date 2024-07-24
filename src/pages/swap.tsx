@@ -443,15 +443,7 @@ function SwapCard() {
             )}
           </Row>
           <div className={`absolute right-0 ${isApprovePanelShown ? 'not-clickable' : 'clickable'}`}>
-            <RefreshCircle
-              run={!isApprovePanelShown}
-              refreshKey="swap"
-              popPlacement="right-bottom"
-              freshFunction={() => {
-                refreshSwap()
-                refreshTokenPrice()
-              }}
-            />
+           
           </div>
         </div>
 

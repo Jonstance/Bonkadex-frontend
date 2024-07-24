@@ -62,12 +62,7 @@ export default function CompensationPage() {
 
         {connected && dataListIsFilled && (
           <Col className="items-end mobile:items-center gap-4">
-            <RefreshCircle
-              refreshKey="compensation"
-              freshFunction={() => {
-                useCompensationMoney.getState().refresh()
-              }}
-            />
+           
             <Button
               className="w-[12em] frosted-glass-teal mb-8"
               size={isMobile ? 'sm' : 'md'}

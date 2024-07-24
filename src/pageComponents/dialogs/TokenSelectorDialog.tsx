@@ -386,9 +386,7 @@ function TokenSelectorDialogContent({
             ) : null}
           </Col>
 
-          <Button type="text" className="w-full py-4 rounded-none font-bold text-xs text-[#ABC4FF]" onClick={on}>
-            View Token List
-          </Button>
+         
         </>
       )}
     </Card>

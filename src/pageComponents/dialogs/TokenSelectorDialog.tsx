@@ -190,8 +190,8 @@ function TokenSelectorDialogContent({
   const [selectedTokenIdx, setSelectedTokenIdx] = useState(0)
 
   const [userCustomizedTokenInfo, setUserCustomizedTokenInfo] = useState({
-    symbol: 'Bonka',
-    name: 'Bonkacoin'
+    symbol: '',
+    name: ''
   })
 
   const cachedTokenList = useMemo(

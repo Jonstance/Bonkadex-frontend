@@ -2,7 +2,7 @@ import toPubString, { toPub } from '@/functions/format/toMintString'
 import { PublicKey } from '@solana/web3.js'
 import { WSOLMint } from './quantumSOL'
 
-export const RAYMint = toPub('4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R')
+export const RAYMint = toPub('CQypd6aNEJpVhcKqmf5knLcGpfPAMtaBusz7vd25d9Ny')
 export const PAIMint = toPub('Ea5SjE2Y6yvCeW5dYTn7PYMuW5ikXkvbGdcmSnXeaLjS')
 export const SRMMint = toPub('SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt')
 export const USDCMint = toPub('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v')

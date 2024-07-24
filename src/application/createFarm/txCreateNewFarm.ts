@@ -73,7 +73,7 @@ export default async function txCreateNewFarm({
         rewardType: reward.isOptionToken ? 'Option tokens' : 'Standard SPL'
       }
     })
-    const lockMint = '4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R' // NOTE: Force at 2022-07-06, haven't tell why, just force it
+    const lockMint = 'CQypd6aNEJpVhcKqmf5knLcGpfPAMtaBusz7vd25d9Ny' // NOTE: Force at 2022-07-06, haven't tell why, just force it
     const lockVault = 'FrspKwj8i3pNmKwXreTveC4fu7KL5ZbGeXdZBe2XViu1' // NOTE: Force at 2022-07-06, haven't tell why, just force it
     const lpMint = poolJsonInfo.lpMint
     const lockMintTokenAccount = tokenAccounts.find((t) => isMintEqual(t.mint, lockMint))

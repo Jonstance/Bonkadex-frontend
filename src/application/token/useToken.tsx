@@ -297,7 +297,7 @@ export const useToken = create<TokenStore>((set, get) => ({
   tokenListSettings: {
     [RAYDIUM_MAINNET_TOKEN_LIST_NAME]: {
       disableUserConfig: true,
-      isOn: true
+      isOn: false
     },
     [RAYDIUM_DEV_TOKEN_LIST_NAME]: {
       disableUserConfig: true,
@@ -311,8 +311,8 @@ export const useToken = create<TokenStore>((set, get) => ({
       isOn: true
     },
     [RAYDIUM_UNNAMED_TOKEN_LIST_NAME]: {
-      isOn: false,
-      cannotbBeSeen: true
+      isOn: true,
+      cannotbBeSeen: false
     }
   },
 

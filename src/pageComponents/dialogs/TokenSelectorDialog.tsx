@@ -99,7 +99,7 @@ function TokenSelectorDialogContent({
     closePanel?.()
   })
   const selectToken = useEvent(async (splToken: SplToken) => {
-    const isOfficialToken = tokenListSettings['Bonkadex Token List'].mints?.has(splToken.mintString)
+    const isOfficialToken = tokenListSettings['Raydium Token List'].mints?.has(splToken.mintString)
     // tokenListSettings['Solana Token List'][splToken.mintString]
     const canSelect =
       turnOnTokenVerification && !isOfficialToken
@@ -190,8 +190,8 @@ function TokenSelectorDialogContent({
   const [selectedTokenIdx, setSelectedTokenIdx] = useState(0)
 
   const [userCustomizedTokenInfo, setUserCustomizedTokenInfo] = useState({
-    symbol: '',
-    name: ''
+    symbol: 'Bonka',
+    name: 'Bonkacoin'
   })
 
   const cachedTokenList = useMemo(

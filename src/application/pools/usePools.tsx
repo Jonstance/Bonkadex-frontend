@@ -26,7 +26,7 @@ export type PoolsStore = {
   /** UI States */
   searchText: string
   timeBasis: '24H' | '7D' | '30D'
-  currentTab: 'All' | 'Raydium' | 'Permissionless' // currently shouldn't show this to user.
+  currentTab: 'All' | 'Permissionless' // currently shouldn't show this to user.
   onlySelfPools: boolean
   expandedPoolIds: Set<string>
 

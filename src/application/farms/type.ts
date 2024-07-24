@@ -53,14 +53,13 @@ export interface FarmPoolJsonInfo {
   rewardPeriodExtend?: number // v6 'end before 72h's    72 * 60 * 60 seconds
 
   local: boolean // only if it is in localstorage(create just by user)
-  category: 'stake' | 'raydium' | 'fusion' | 'ecosystem' // add by UI for unify the interface
+  category: 'stake'  | 'fusion' | 'ecosystem' // add by UI for unify the interface
 }
 
 export type FarmPoolsJsonFile = {
   name: string
   version: unknown
   stake: Omit<FarmPoolJsonInfo, 'category'>[]
-  raydium: Omit<FarmPoolJsonInfo, 'category'>[]
   fusion: Omit<FarmPoolJsonInfo, 'category'>[]
   ecosystem: Omit<FarmPoolJsonInfo, 'category'>[]
 }

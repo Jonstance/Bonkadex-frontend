@@ -22,7 +22,7 @@ export type FarmStore = {
 
   onlySelfFarms: boolean
   onlySelfCreatedFarms: boolean
-  currentTab: 'Raydium' | 'Fusion' | 'Ecosystem' | 'Staked'
+  currentTab: 'Fusion' | 'Ecosystem' | 'Staked'
   timeBasis: '24H' | '7D' | '30D'
   tokenType: 'All' | 'Standard SPL' | 'Option tokens'
   searchText: string
@@ -49,7 +49,7 @@ const useFarms = create<FarmStore>((set, get) => ({
 
   onlySelfFarms: false,
   onlySelfCreatedFarms: false,
-  currentTab: 'Raydium',
+  currentTab: 'Fusion',
   timeBasis: '7D',
   tokenType: 'All',
   searchText: '',

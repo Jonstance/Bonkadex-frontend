@@ -85,25 +85,24 @@ export default function FarmsPage() {
   const currentTab = useFarms((s) => s.currentTab)
 
   useEffect(() => {
-    useFarms.setState({ currentTab: query.tab as 'Raydium' | 'Fusion' | 'Ecosystem' | 'Staked' })
+    useFarms.setState({ currentTab: query.tab as 'Fusion' | 'Ecosystem' | 'Staked' })
   }, [query])
 
   return (
     <PageLayout
       mobileBarTitle={{
         items: [
-          { value: 'Raydium', barLabel: 'Bonkadex Farm' },
           { value: 'Fusion', barLabel: 'Fusion Farm' },
           { value: 'Ecosystem', barLabel: 'Ecosystem Farm' },
           { value: 'Staked', barLabel: 'Staked Farm' }
         ],
         currentValue: currentTab,
-        onChange: (value) => useFarms.setState({ currentTab: value as 'Raydium' | 'Fusion' | 'Ecosystem' | 'Staked' }),
+        onChange: (value) => useFarms.setState({ currentTab: value as 'Fusion' | 'Ecosystem' | 'Staked' }),
         urlSearchQueryKey: 'tab',
         drawerTitle: 'FARMS'
       }}
       contentButtonPaddingShorter
-      metaTitle="Farms - Raydium"
+      metaTitle="Farms - Bonkadex"
     >
       <FarmHeader />
       <FarmCard />
@@ -299,7 +298,7 @@ function FarmTabBlock({ className }: { className?: string }) {
     <Tabs
       currentValue={currentTab}
       urlSearchQueryKey="tab"
-      values={shakeFalsyItem(['Raydium', 'Fusion', 'Ecosystem', 'Staked'] as const)}
+      values={shakeFalsyItem(['Fusion', 'Ecosystem', 'Staked'] as const)}
       onChange={(tab) => useFarms.setState({ currentTab: tab })}
       className={className}
     />
@@ -307,7 +306,7 @@ function FarmTabBlock({ className }: { className?: string }) {
     <Tabs
       currentValue={currentTab}
       urlSearchQueryKey="tab"
-      values={shakeFalsyItem(['Raydium', 'Fusion', 'Ecosystem', 'Staked'] as const)}
+      values={shakeFalsyItem(['Fusion', 'Ecosystem', 'Staked'] as const)}
       onChange={(tab) => useFarms.setState({ currentTab: tab })}
       className={twMerge('justify-self-center mobile:col-span-full', className)}
     />
@@ -428,7 +427,7 @@ function FarmCard() {
             : false
           : currentTab === 'Ecosystem'
           ? i.category === 'ecosystem'
-          : i.category === 'raydium' && (isHydratedFarmInfo(i) ? !i.isClosedPool : true)
+          : i.category === 'fusion' && (isHydratedFarmInfo(i) ? !i.isClosedPool : true)
       ),
     [currentTab, dataSource]
   )
@@ -533,7 +532,7 @@ function FarmCard() {
       ? { title: 'Fusion Farms', description: 'Stake LP tokens and earn project token rewards' }
       : currentTab === 'Staked'
       ? { title: 'Your Staked Farms', description: 'You are currently staked in these farms' }
-      : { title: 'Bonkadex Farms', description: 'Stake LP tokens and earn token rewards' }
+      : { title: 'Fusion Farms', description: 'Stake LP tokens and earn token rewards' }
 
   // NOTE: filter widgets
   const innerFarmDatabaseWidgets = isMobile ? (

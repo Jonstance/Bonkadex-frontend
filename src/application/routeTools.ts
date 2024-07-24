@@ -46,7 +46,7 @@ export type PageRouteConfigs = {
   '/farms': {
     queryProps?: {
       searchText?: string
-      currentTab?: 'Raydium' | 'Fusion' | 'Ecosystem' | 'Staked'
+      currentTab?: 'Fusion' | 'Ecosystem' | 'Staked'
       newExpandedItemId?: string
     }
   }

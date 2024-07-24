@@ -447,10 +447,10 @@ function PoolCard() {
     () =>
       hasHydratedInfoLoaded
         ? hydratedInfos
-            .filter((i) => (currentTab === 'All' ? true : currentTab === 'Raydium' ? i.official : !i.official)) // Tab
+            .filter((i) => (currentTab === 'All' ? true : currentTab === 'Permissionless' ? i.official : !i.official)) // Tab
             .filter((i) => (onlySelfPools ? Object.keys(unZeroBalances).includes(i.lpMint) : true)) // Switch
         : jsonInfos.filter((i) =>
-            currentTab === 'All' ? true : currentTab === 'Raydium' ? i.official : !i.official
+            currentTab === 'All' ? true : currentTab === 'Permissionless' ? i.official : !i.official
           ) /* Tab*/, // Tab
     [onlySelfPools, hydratedInfos, hasHydratedInfoLoaded, jsonInfos]
   ) as (JsonPairItemInfo | HydratedPairItemInfo)[]

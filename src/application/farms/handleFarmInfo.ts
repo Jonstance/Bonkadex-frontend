@@ -70,7 +70,7 @@ export async function fetchFarmJsonInfos(): Promise<FarmPoolJsonInfo[] | undefin
   })
   if (!result) return undefined
   const stakeFarmInfoList = result.stake.map((i) => ({ ...i, category: 'stake' })) ?? []
-  const raydiumFarmInfoList = result.raydium.map((i) => ({ ...i, category: 'raydium' })) ?? []
+  const raydiumFarmInfoList = result.raydium.map((i) => ({ ...i, category: 'fusion' })) ?? []
   const fusionFarmInfoList = result.fusion.map((i) => ({ ...i, category: 'fusion' })) ?? []
   const ecosystemFarmInfoList = result.ecosystem.map((i) => ({ ...i, category: 'ecosystem' })) ?? []
   // @ts-expect-error string literial type error. safe to ignore it

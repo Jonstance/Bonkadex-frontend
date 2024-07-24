@@ -74,10 +74,10 @@ export function SolanaWalletProviders({ children }: { children?: ReactNode }) {
         options: {
           projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PJ_ID,
           metadata: {
-            name: 'Raydium',
-            description: 'Raydium',
-            url: 'https://raydium.io/',
-            icons: ['https://raydium.io/logo/logo-only-icon.svg']
+            name: 'Bonkadex',
+            description: 'Bonkadex',
+            url: 'https://bonkadex.com/',
+            icons: ['https://bonkadex.com/logo/logo-only-icon.svg']
           }
         }
       }),

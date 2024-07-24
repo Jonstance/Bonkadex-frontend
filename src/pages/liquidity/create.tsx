@@ -72,7 +72,7 @@ function PanelContent({ close }: { close(): void }) {
       {/* text */}
       <div className="my-12 mobile:my-6 italic text-center text-sm font-medium text-[rgba(171,196,255,.5)]">
         This tool is for advanced users. Before attempting to create a new liquidity pool, we suggest going through this{' '}
-        <Link href="https://raydium.gitbook.io/raydium/permissionless/creating-a-pool">detailed guide</Link>
+        <Link href="">detailed guide</Link>
       </div>
       <InputBox
         label="OpenBook Market ID:"

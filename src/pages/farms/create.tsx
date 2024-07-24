@@ -71,7 +71,7 @@ function NavButtons({ className }: { className?: string }) {
 function WarningBoard({ className }: { className: string }) {
   const [needWarning, setNeedWarning] = useState(true)
   const isMoblie = useAppSettings((s) => s.isMobile)
-  const detailedGuideHref = 'https://raydium.gitbook.io/raydium/exchange-trade-and-swap/creating-an-ecosystem-farm'
+  const detailedGuideHref = ''
   return (
     <FadeInStable show={needWarning}>
       <Row className={className}>
